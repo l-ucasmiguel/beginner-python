@@ -14,8 +14,6 @@ linha_1 =  f'O {nome} tem {altura} de altura e pesa {peso} quilos seu imc é {im
 print(linha_1)
 
 
-
-
 # IMC = PESO / (ALTURA X ALTURA)
 
 # Renato Augusto tem 1.85 de altura 
