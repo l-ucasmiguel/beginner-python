@@ -1,3 +1,6 @@
+# FORMATAÇÃO DE STRING
+# INTRODUÇÃO FORMAT()
+
 # Usando . após as aspas da string ''.
 # Conseguimos acessar os métodos do objeto
 # Uma das funções é o format()
