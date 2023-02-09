@@ -8,7 +8,7 @@ Loop infinito -> quando o código não tem fim
 
 contador = 0 
 
-while contador <= 10:
+while contador <= 10:                   #Enquanto contador <= 10 
     print(contador)
     contador = contador+1
 

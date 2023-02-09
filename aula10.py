@@ -1,4 +1,4 @@
-# SINAL DE + concatena string 
+# SINAL DE + concatenação string 
 # SINAL DE * faz a repetição interio e string
 
 concatenacao = 'A' + 'B' + 'C'

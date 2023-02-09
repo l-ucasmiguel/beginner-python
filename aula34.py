@@ -7,8 +7,8 @@ Loop infinito -> quando o código não tem fim
 """
 
 condicao = True
-while condicao:
-    nome = input("Qual é o seu nome? ")
+while condicao:                                  # Enquanto a condição for verdadeira 
+    nome = input("Qual é o seu nome? ")          
     print(f'Seu nome é {nome}')
     
     if nome == 'sair':
