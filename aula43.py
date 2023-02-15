@@ -11,9 +11,11 @@
 # print('Aquele laço acima poderia ter repetições infinitas')
 
 
-texto = 'Python'
+#   FOR
+texto = input('Digite uma palavra: ') # Iterável
 novo_texto = ''
-for letra in texto:         # For pede o iterável, a gente escolhe, no caso é 'letra'
-    novo_texto += f'*{letra}'
-    print(letra)
-print(novo_texto + '*')
+
+for letra in texto:                   # For pede que a gente crie um iterador, para realizar a iteração
+    novo_texto += f'*{letra}'         # O Iterador te entrega um valor por vez, a gente que escolhe
+    print(letra)                      # no caso é 'letra', a variável texto(iterável) tá pedindo o iterador
+print('\n',novo_texto + '*')          # O iterável me entrega o objeto iterador, que não é a string
