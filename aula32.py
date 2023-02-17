@@ -55,11 +55,3 @@ elif len(nome) >=7:
     print('Seu nome é muito grande')
 else:
     print('Digite mais de uma letra')
-
-
-
-
-
-
-
-

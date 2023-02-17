@@ -14,7 +14,7 @@ while i < len(frase):                                   # enquanto i < quantidad
     qtd_atual_num = frase.count(letra_atual)            # é criado uma nova variável para receber frase.count
                                                         # count é um método pra contar quantas vezes X coisas apareceu na string 
     
-    if  num_qtd_mais_vezes < qtd_atual_num:            # quando é colocado o '<=' no lugar de '<' é sempre usada a última letr se a qtd for =
+    if  num_qtd_mais_vezes < qtd_atual_num:             # quando é colocado o '<=' no lugar de '<' é sempre usada a última letr se a qtd for =
         num_qtd_mais_vezes = qtd_atual_num              # aqui o qtd_apareceu_mais_vezes recebe a quantidade atual que tem mais caracteres 
         letra_mais_vezes = letra_atual                  # aqui a variável letra_apareceu_mais_vezes recebe a letra que apareceu mais vezes 
         
