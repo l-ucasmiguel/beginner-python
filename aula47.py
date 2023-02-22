@@ -12,9 +12,9 @@ FOR     =   PARA
 WHILE   =   ENQUANTO
 """
 
-# import os
+import os
 
-palavra_secreta = 'uva'                     
+palavra_secreta = 'tomate'                     
 letras_acertadas = ''
 tentativas = 0                              
 
@@ -40,7 +40,7 @@ while True:
     print('Palavra formada: ', palavra_formada)     
 
     if palavra_formada == palavra_secreta:
-        # os.system('clear')
+        os.system('clear')
         print("\nVOCÊ GANHOU, PARABÉNS!")
         print('A palavra era', palavra_secreta)
         print('Tentativas:', tentativas)
