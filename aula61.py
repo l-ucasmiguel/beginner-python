@@ -30,9 +30,28 @@ O primeiro dígito do CPF é 7
 
 
 
-# CALCULANDO O 1º DÍGITO: 
+# CALCULANDO O 1º DÍGITO:
 
-cpf_enviado_usuario = '74682489070'
+
+import re
+
+# replace é um método que funciona com strings, primeiro a gente coloca entre áspas o que quer substituir, e depois o que queremos colocar no lugar
+# exemploo ('.',',')
+
+
+# cpf_enviado_usuario = '746.824.890-70' \
+#     .replace('.','') \
+#     .replace('-','')                                                              # '\' para quebra de linha 
+
+
+# expressão regular 
+cpf_enviado_usuario = re.sub(
+    r'[^0-9]',
+    '',
+    '746.824.890-70'
+)
+
+
 nove_digitos = cpf_enviado_usuario[:9]                                              # Fatiando a string do 0 ao 9 dígito | último dígito ñ aparece
 contador_regressivo_1 = 10                                                          # Contador
 
@@ -69,6 +88,8 @@ digito_2 = ((resultado_digito_2 * 10) %11)
 
 digito_2 = digito_2 if digito_2 <= 9 else 0                                         # se digito_2 for <= 9,recebe digito_2, se não recebe 0
 print(digito_2)
+print(150 * '-')
+
 
 """
 1- 'j' percorre os 'dez_digitos'
@@ -76,10 +97,12 @@ print(digito_2)
 3- 'contador_regressivo_2' vai diminuindo 
 """
 
-####################################################################################
+
+
+
+# VALIDANDO CPF 
 
 cpf_gerado_calculo = f'{nove_digitos}{digito_1}{digito_2}'
-print(150 * '-')
 
 if cpf_enviado_usuario == cpf_gerado_calculo:
     print(f'{cpf_enviado_usuario} é válido')
