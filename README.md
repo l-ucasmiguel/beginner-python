@@ -1,2 +1,1 @@
-# aulas-python
- learning
+beginner-python
